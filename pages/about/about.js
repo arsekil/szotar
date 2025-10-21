@@ -1,5 +1,6 @@
 import szotar from '../api/szotar';
 import Head from 'next/head';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import styles from '../../styles/About.module.css';
 
@@ -40,7 +41,13 @@ export default function About() {
         <div className={styles.container}>
             <div className={styles.title}><h1>Rólunk</h1></div>
             <div className={styles.content}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. In, exercitationem. Sapiente rerum modi, obcaecati alias necessitatibus culpa praesentium rem fugit fuga, at molestias deserunt sunt ipsa perspiciatis quo saepe. Cumque!
+                    This website is part of the Értelmetlenező Szótár Prodzsekt (Nonsense Dictionary Project), which aims to collect and present a variety of nonsensical words and phrases. Our goal is to explore the playful side of language and provide a platform for creativity and imagination.
+                    <br /><br />
+                    The project is maintained by a dedicated team of language enthusiasts who believe in the power of words to inspire and entertain. We welcome contributions from anyone interested in adding to our collection of nonsensical terms.
+                    <br /><br />
+                    If you have any questions, suggestions, or would like to contribute, please feel free to reach out to us through <Link href="https://poet.hu" target="_blank">Poet.hu</Link>.
+                    <br /><br />
+                    Thank you for visiting the Értelmetlenező Szótár Prodzsekt!
             </div>
         </div>
         </>
