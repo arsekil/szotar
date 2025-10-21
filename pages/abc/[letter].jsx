@@ -17,11 +17,9 @@ export default function Letter({ entries }) {
   const sortedEntries = useMemo(() => {
     if (entries && entries.length > 0) {
       return entries.sort((a, b) =>
-        a.halan
-          .toLowerCase()
-          .localeCompare(b.halan.toLowerCase(), "hu-HU", {
-            sensitivity: "base",
-          })
+        a.halan.toLowerCase().localeCompare(b.halan.toLowerCase(), "hu-HU", {
+          sensitivity: "base",
+        })
       );
     }
     return [];
